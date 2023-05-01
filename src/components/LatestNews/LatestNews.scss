@@ -1,0 +1,10 @@
+.latest-news {
+  padding: 60px 0;
+}
+
+@media (width >= 1023px) {
+  .latest-news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

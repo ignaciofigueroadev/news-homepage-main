@@ -1,0 +1,16 @@
+@import "../../components/Variables/variables";
+
+.button {
+  background-color: $soft-red;
+  font-family: $font-inter;
+  font-weight: $font-weight-700;
+  color: $off-white;
+  letter-spacing: 0.5rem;
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $very-dark-blue;
+  }
+}

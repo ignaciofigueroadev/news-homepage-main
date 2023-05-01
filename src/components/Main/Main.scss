@@ -1,0 +1,79 @@
+@import "../../components/Variables/variables";
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  &__illustration {
+    &--desktop {
+      display: none;
+    }
+  }
+
+  &__div {
+    display: grid;
+    gap: 2rem;
+  }
+
+  &__title {
+    font-size: 3rem;
+    line-height: 3.2rem;
+    margin-top: 3.125rem;
+    font-weight: $font-weight-800;
+    color: $very-dark-blue;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+  }
+
+  &__description {
+    color: $dark-grayish-blue;
+  }
+
+  &__new {
+    background-color: $very-dark-blue;
+    display: grid;
+    gap: 2.5rem;
+    padding: 2rem 2rem;
+  }
+
+  &__subtitle {
+    color: $soft-orange;
+    font-size: 2rem;
+    font-weight: $font-weight-700;
+  }
+}
+
+@media (width >= 1023px) {
+  .main {
+    flex-direction: row;
+
+    &__illustration {
+      &--desktop {
+        display: block;
+      }
+
+      &--mobile {
+        display: none;
+      }
+    }
+
+    &__div {
+      display: flex;
+      align-items: center;
+      margin-top: 60px;
+    }
+
+    &__title {
+      margin-top: 0;
+    }
+
+    &__new {
+      gap: 0;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import "../../components/Variables/variables";
+
+.new {
+  border-bottom: 1px solid $off-white;
+  padding: 1.5rem 0;
+  font-family: $font-inter;
+
+  &__title {
+    color: $off-white;
+    font-weight: $font-weight-800;
+    margin-bottom: 0.625rem;
+    cursor: pointer;
+
+    & > button:hover {
+      cursor: pointer;
+      color: $soft-orange;
+    }
+  }
+
+  &__description {
+    color: $dark-grayish-blue;
+  }
+}

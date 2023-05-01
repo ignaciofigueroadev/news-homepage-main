@@ -1,0 +1,14 @@
+@import "../src/components/Variables/variables";
+
+body {
+  font-family: $font-inter;
+  background-color: $off-white;
+  padding: 0 1.5rem;
+  overflow-x: hidden;
+}
+
+@media (width >= 1023px) {
+  body {
+    padding: 0 8rem;
+  }
+}

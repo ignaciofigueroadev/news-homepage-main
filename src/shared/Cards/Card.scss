@@ -1,0 +1,38 @@
+@import "../../components/Variables/variables";
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-family: $font-inter;
+  margin-bottom: 1rem;
+
+  &__info {
+    display: grid;
+    gap: 1rem;
+    grid-column: 2/4;
+  }
+
+  &__number {
+    color: $grayish-blue;
+    font-size: 2rem;
+  }
+
+  &__title {
+    color: $very-dark-blue;
+    & > button {
+      font-weight: $font-weight-800;
+    }
+    & > button:hover {
+      color: $soft-red;
+      cursor: pointer;
+    }
+  }
+
+  &__description {
+    color: $dark-grayish-blue;
+    font-size: 0.75rem;
+  }
+}
